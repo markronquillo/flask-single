@@ -1,0 +1,10 @@
+{% import 'macros.html' as macros %}
+
+<h1>Values are:</h1>
+
+<ul>
+	{% for num in nums %}
+		{{ macros.render_number(num) }}
+	{% endfor %}
+</ul>
+
